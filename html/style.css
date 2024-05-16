@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-primaria: #cacaca;
+}
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.corpo__form {
+    background-image: url("/imagens/fundo-imagem.png");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container__form {
+    text-align: center;
+    background-color: var(--fonte-primaria);
+    border: 2px solid var(--fonte-primaria);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form {
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form__titulo {
+    color: #000000;
+    text-align: center;
+    text-shadow: 1px 1px 2px #ffffffa1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    background-color: #f0f0f0;
+}
+
+.nossa-marca {
+    background-color: #e0e0e0;
+}
+
+.barba-cabelo {
+    background-color: #d0d0d0;
+}
+
+.nossas-unidades {
+    background-color: #c0c0c0;
+}
+
+.agende {
+    background-color: #b0b0b0;
+}
+
+.cabecalho__lista {
+    padding: 3em;
+}
