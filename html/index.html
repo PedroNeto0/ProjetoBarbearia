@@ -9,7 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="principal.css">
     <title>Barbearia PYP VINTAGE CLUB</title>
 </head>
 
@@ -17,11 +17,11 @@
     <header>
         <nav>
             <ul class="cabecalho__lista">
-                <li><a href="#home" class="menu-item">HOME</a></li>
-                <li><a href="#nossa-marca" class="menu-item">NOSSA MARCA</a></li>
-                <li><a href="#barba-cabelo" class="menu-item">BARBA E CABELO</a></li>
-                <li><a href="#nossas-unidades" class="menu-item">NOSSAS UNIDADES</a></li>
-                <li><a href="#agende" class="menu-item">AGENDE</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#nossa__marca">NOSSA MARCA</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#unidades">NOSSAS UNIDADES</a></li>
+                <li><a href="#agende">AGENDE</a></li>
             </ul>
             <div>
 
@@ -30,18 +30,157 @@
     </header>
 
     <section id="home" class="home">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <h2 class="home__titulo">Barbearia PYP VINTAGE CLUB</h2>
+        <div class="home__imagens">
+            <img src="/imagens/beneficios.jpg" alt="Imagem 1" class="home__imagens-item">
+            <img src="/imagens/home-imagem.png" alt="Imagem 2" class="home__imagens-item">
+            <img src="/imagens/noossa__marca.png" alt="Imagem 3" class="home__imagens-item">
+        </div>
     </section>
-    <section id="nossa-marca" class="nossa-marca"></section>
-    <section id="barba-cabelo" class="barba-cabelo"></section>
-    <section id="nossas-unidades" class="nossas-unidades"></section>
-    <section id="agende" class="agende"></section>
+    <section class="nossa__marca" id="nossa__marca">
+        <div class="nossa__marca__container">
+            <div>
+                <img class="nossa__marca-imagem" src="/imagens/home-imagem-2.png" alt="Imagem sobre a barbearia" />
+            </div>
+
+            <div class="nossa__marca__container__secundario">
+                <h2 class="nossa__marca-titulo">NOSSA MARCA</h2>
+                <p class="nossa__marca-paragrafo">Bem-vindo à Barbearia PYP Vintage Club, onde cada visita é uma jornada
+                    de volta aos tempos dourados
+                    da masculinidade refinada. Inspirados pelas lendárias barbearias de Nova York das décadas de 40, 50
+                    e 60, buscamos resgatar a essência perdida da cultura masculina, onde fazer a barba era mais do que
+                    uma rotina, era um ritual de camaradagem e elegância. Em nosso ambiente cuidadosamente projetado, os
+                    homens podem reviver a tradição de cuidar da barba e do cabelo enquanto desfrutam de uma atmosfera
+                    de camaradagem e sofisticação. Aqui, cada detalhe foi pensado para proporcionar uma experiência
+                    única, desde as toalhas quentes que preparam a pele para o barbear até as massagens faciais
+                    revigorantes que deixam nossos clientes revigorados.</p>
+            </div>
+        </div>
+    </section>
+    <section class="servicos" id="servicos">
+        <div class="servicos__container">
+            <h2 class="servicos__titulo">Serviços</h2>
+            <p class="servicos__paragrafo">Na Barbearia PYP VINTAGE CLUB, a tradição encontra a modernidade,
+                proporcionando aos nossos clientes uma experiência de cuidado pessoal que transcende o comum. Nossos
+                serviços são projetados especialmente para o homem contemporâneo que valoriza a qualidade, o estilo e a
+                atenção aos detalhes.</p>
+        </div>
+        <section>
+            <div>
+                <img src="/imagens/cabelo.jpg" alt="Corte normal" />
+                <div>
+                    <strong>Corte normal: </strong>
+                    <p class="servicos__secao-preco">R$ 45,00</p>
+                </div>
+                <p>Nossos barbeiros habilidosos são verdadeiros artistas quando se trata de cortes de cabelo.</p>
+            </div>
 
 
+            <div>
+                <img src="/imagens/barba.jpg" alt="Barba completa" />
+                <div>
+                    <strong>Barba completa: </strong>
+                    <p class="servicos__secao-preco">R$ 45,00</p>
+                </div>
+                <p>Oferecemos tratamentos de barba de primeira classe, que vão desde aparar e modelar até tratamentos
+                    completos com a navalha.<br>Deixe nossos especialistas transformarem sua barba ou bigode em uma
+                    obra-prima de elegância masculina.</p>
+            </div>
+
+            <div>
+                <img src="/imagens/cabelo+barba.jpg" alt="Corte e barba" />
+                <div>
+                    <strong>Corte e barba: </strong>
+                    <p class="servicos__secao-preco">R$ 45,00</p>
+                </div>
+                <p>Do clássico ao moderno, eles dominam uma variedade de estilos para atender às suas preferências e
+                    realçar sua personalidade.</p>
+            </div>
+        </section>
+    </section>
+    <section id="unidades">
+        <h2 class="unidades__titulo">Nossas Unidades</h2>
+        <div class="unidades__container">
+            <div class="unidades__mapa">
+                <div class="unidades__mapa-label">Rio de Janeiro, Rio de Janeiro</div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7346.14996680776!2d-43.20697!3d-22.98427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd571eb41169f%3A0xdf801aca0afec656!2sBarbearia%20Carioca%20Ipanema!5e0!3m2!1spt-BR!2sbr!4v1716325722564!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="unidades__horarios-mensagem">Horários de funcionamento:</p>
+                <p class="unidades__mapa-descricao">Segunda à Sábado 10h às 22h<br>Domingos e Feriados 14h às 20h</p>
+            </div>
+            <div class="unidades__mapa">
+                <div class="unidades__mapa-label">São Paulo, São Paulo</div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7490508.909607112!2d-46.691154!3d-23.551376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57be30ae4773%3A0x7b6f0b8bb03f22c9!2sS%C3%A3o%20Paulo%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1716325663935!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="unidades__horarios-mensagem">Horários de funcionamento:</p>
+                <p class="unidades__mapa-descricao">Segunda à Sábado 10h às 20h<br>Domingos e Feriados 10h às 18h</p>
+            </div>
+        </div>
+    </section>
+    <form id="agende">
+        <h3 class="agende__titulo">Agendamentos:</h3>
+        <label for="local">Escolha o local:</label>
+        <select id="local" name="local">
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="sao_paulo">São Paulo</option>
+            <option value="rio_de_janeiro">Rio de Janeiro</option>
+        </select>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" min="2024-05-21" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="servico">Serviços:</label>
+        <select id="servico" name="servico">
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="cabelo">Cabelo</option>
+            <option value="barba">Barba</option>
+            <option value="cabelo_barba">Cabelo e Barba</option>
+        </select>
+
+        <input type="submit" value="Agendar">
+        <p id="mensagem" style="display: none; color: rgb(255, 255, 255);"></p> <!-- Elemento para exibir a mensagem -->
+    </form>
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <div class="rodape__contato">
+                <h3>Contato</h3>
+                <p>Email: barbeariaPYPVINTAGECLUB@email.com</p>
+                <p>Telefone: (00) 1234-5678</p>
+            </div>
+
+            <div class="rodape__redes-sociais">
+                <h3>Redes Sociais</h3>
+                <ul class="rodape__redes-sociais-lista">
+                    <li><a href="https://www.facebook.com/?locale=pt_BR">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape__links-uteis">
+                <h3>Links Úteis</h3>
+                <ul class="rodape__links-uteis-lista">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#nossa__marca">NOSSA MARCA</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#unidades">NOSSAS UNIDADES</a></li>
+                    <li><a href="#agende">AGENDE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape__copyright">
+            <p>&copy; 2024 Nome da Sua Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="/html/script.js"></script>
 </body>
-
-</html>
 
 </html>
