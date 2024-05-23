@@ -70,7 +70,7 @@
                 <img src="/imagens/cabelo.jpg" alt="Corte normal" />
                 <div>
                     <strong>Corte normal: </strong>
-                    <p class="servicos__secao-preco">R$ 45,00</p>
+                    <p class="servicos__secao-preco">R$ 50,00</p>
                 </div>
                 <p>Nossos barbeiros habilidosos são verdadeiros artistas quando se trata de cortes de cabelo.</p>
             </div>
@@ -80,7 +80,7 @@
                 <img src="/imagens/barba.jpg" alt="Barba completa" />
                 <div>
                     <strong>Barba completa: </strong>
-                    <p class="servicos__secao-preco">R$ 45,00</p>
+                    <p class="servicos__secao-preco">R$ 40,00</p>
                 </div>
                 <p>Oferecemos tratamentos de barba de primeira classe, que vão desde aparar e modelar até tratamentos
                     completos com a navalha.<br>Deixe nossos especialistas transformarem sua barba ou bigode em uma
@@ -91,7 +91,7 @@
                 <img src="/imagens/cabelo+barba.jpg" alt="Corte e barba" />
                 <div>
                     <strong>Corte e barba: </strong>
-                    <p class="servicos__secao-preco">R$ 45,00</p>
+                    <p class="servicos__secao-preco">R$ 85,00</p>
                 </div>
                 <p>Do clássico ao moderno, eles dominam uma variedade de estilos para atender às suas preferências e
                     realçar sua personalidade.</p>
@@ -121,32 +121,34 @@
             </div>
         </div>
     </section>
-    <form id="agende">
-        <h3 class="agende__titulo">Agendamentos:</h3>
-        <label for="local">Escolha o local:</label>
-        <select id="local" name="local">
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="sao_paulo">São Paulo</option>
-            <option value="rio_de_janeiro">Rio de Janeiro</option>
-        </select>
+    <section>
+        <form id="agende">
+            <h3 class="agende__titulo">Agendamentos:</h3>
+            <label for="local">Escolha o local:</label>
+            <select id="local" name="local">
+                <option value="" disabled selected hidden>Selecione uma opção</option>
+                <option value="sao_paulo">São Paulo</option>
+                <option value="rio_de_janeiro">Rio de Janeiro</option>
+            </select>
 
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data" min="2024-05-21" required>
+            <label for="servico">Serviços:</label>
+            <select id="servico" name="servico">
+                <option value="" disabled selected hidden>Selecione uma opção</option>
+                <option value="cabelo">Cabelo</option>
+                <option value="barba">Barba</option>
+                <option value="cabelo_barba">Cabelo e Barba</option>
+            </select>
+            
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" min="2024-05-21" required>
 
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
 
-        <label for="servico">Serviços:</label>
-        <select id="servico" name="servico">
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="cabelo">Cabelo</option>
-            <option value="barba">Barba</option>
-            <option value="cabelo_barba">Cabelo e Barba</option>
-        </select>
-
-        <input type="submit" value="Agendar">
-        <p id="mensagem" style="display: none; color: rgb(255, 255, 255);"></p> <!-- Elemento para exibir a mensagem -->
-    </form>
+            <input type="submit" value="Agendar">
+            <p id="mensagem"></p>
+        </form>
+    </section>
     <footer class="rodape">
         <div class="rodape__conteudo">
             <div class="rodape__contato">
@@ -177,7 +179,7 @@
         </div>
 
         <div class="rodape__copyright">
-            <p>&copy; 2024 Nome da Sua Empresa. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Barbearia PYP VINTAGE CLUB. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="/html/script.js"></script>
