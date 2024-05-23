@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+</html><!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -11,27 +11,38 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <title>Login</title>
-</head>
 
-<body class="corpo__form">
+<body>
     <div class="container">
-        <main class="principal">
-            <div class="container__form">
-                <h1 class="form__titulo">Barbearia PYP VINTAGE CLUB</h1>
+        <main>
+            <div class="container-form">
+                <h1>PYP VINTAGE CLUB</h1>
+                <h2>Barbearia</h2>
                 <form action="index.html" method="get">
-                    <strong>Usuário:</strong>
-                    <input type="text" name="nome" required> <br><br>
+                    <div class="input-box">
+                        <input type="email" placeholder="Digite seu E-Mail ou CPF" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
 
-                    <strong>Senha:</strong>
-                    <input type="text" name="senha" required> <br><br>
+                    <div class="input-box">
+                         <input type="password" placeholder="Insira sua senha" required>
+                         <i class='bx bxs-lock-alt'></i>
+                    </div>
 
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <div class="lembreme">
+                        <label><input type="checkbox"> Manter conectado</label>
+                        <a href="a">Esqueceu sua senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Entrar</button>
+
+                    <div class="registro">
+                        <p>Não possui uma conta? <a href="a">Registre-se</a></p>
+                    </div>
                 </form>
             </div>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
